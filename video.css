@@ -1,0 +1,129 @@
+.video{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.video .title{
+    margin-bottom: 30px;
+    border-block:2px solid var(--first-color) ;
+}
+.video p{
+    color: var(--first-color);
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: rgb(54, 54, 54);
+    margin-bottom: 30px;
+    font-family: 'roboto';
+}
+.video video{
+    width: 100%;
+}
+.video .video-play{
+    width: 700px;
+    margin-inline: auto;
+    position: relative;
+}
+.video .play{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 23px;
+    background-color: var(--first-color);
+    right: 40px;
+    bottom: -10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.video .play:hover{
+    background-color: rgb(58, 157, 196);
+}
+
+.place{
+    font-family: 'roboto';
+    padding-block:100px 40px;
+    margin-top: 20px;
+}
+
+.place .card{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    height: 340px;
+}
+.place .card img{
+    width: 290px;
+    height: 340px;
+    transition: .3s;
+    cursor: pointer;
+}
+.place .card img:hover{
+    transform: scale(1.1);
+}
+.place .card .top-card{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.place .card .body-card{
+    position: absolute;
+    bottom: 70px;
+    left: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 17px;
+}
+
+.place .card .arrow{
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 19px;
+    background-color: var(--first-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.place .card .arrow:hover{
+     background-color: var(--hover-color);
+}
+
+.place .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-inline:auto;
+    gap: 25px;
+    row-gap: 35px;
+    width: fit-content;
+}
+
+footer{
+    padding-block: 30px;
+    padding-inline: 17px;
+    background-color: var(--first-color);
+    margin-top: 70px;
+    font-family: 'roboto';
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.social-media li{
+    padding: 6px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--first-color);
+    transition: .3s;
+    cursor: pointer;
+}
+.social-media li:hover{
+    background-color: var(--first-color);
+    color: white;
+}
+.copyright{
+    text-align: center;
+}
+

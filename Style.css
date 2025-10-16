@@ -1,0 +1,236 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    color: white;
+    transition: .3s;
+}
+
+:root{
+      --first-color: hsl(190, 89%, 21%);
+      --header-color: hsl(190, 80%, 27%);
+       --hover-color: hsl(190, 63%, 37%);
+  --first-color-second: hsl(190, 64%, 22%);
+  --first-color-alt: hsl(190, 64%, 15%);
+}
+.zoglid{
+ width: 1140px;
+ margin-inline: auto;
+ padding-bottom: 40px;
+}
+header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   font-family: 'roboto';
+   transition: .4s;
+   z-index: 999;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block:24px;
+  width: 1140px;
+}
+.right-head{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.right-head .menu{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+.right-head .menu a{
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px !important;
+    font-size: 17px;
+}
+.right-head .menu a:hover{
+    text-decoration: underline;
+}
+.right-head .setting{
+    display: flex;
+    gap: 11px;
+    font-size: 18px;
+}
+.right-head .setting i{
+    cursor: pointer;
+}
+.right-head .setting i:hover{
+    color: rgb(56, 219, 248);
+}
+.right-head .fa-bars{
+    display: none;
+}
+.menu-list{
+    position: fixed;
+    width: 240px;
+    background-color: white;
+    height: 100%;
+    right:-240px;
+    z-index: 1000;
+    padding-block:70px 40px;
+    padding-left: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--first-color-alt);
+    transition: .5s;
+}
+.menu-list a{
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 17px;
+    transition: .3s;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px !important;
+}
+.menu-list a:hover{
+    text-decoration: underline;
+}
+.menu-list .fa-home{
+    text-decoration: underline;
+}
+.fa-xmark{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.fa-xmark:hover{
+    color: var(--hover-color);
+}
+.show-list .menu-list{
+    right: 0;
+}
+
+.header-mode header{
+   background-color: var(--header-color);
+}
+.header-mode header a{
+    
+}
+.home{
+    height: 100vh;
+    background: url(img/matt-jones-LBohd-9ceAE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+}
+.home .top{
+    width: 400px;
+}
+.home p{
+    font-size: 18px;
+}
+.home h1{
+    margin-block:12px 34px;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+.home button{
+    border: none;
+    padding: 11px 30px;
+    background-color:var(--first-color) ;
+    font-size: 16px;
+    transition: .3s;
+    color: white;
+    cursor: pointer;
+        box-shadow: 1px 1px 10px rgba(245, 245, 245, 0.808);
+}
+.home button:hover{
+    transform: translateY(-2px);
+    background-color: var(--hover-color);
+}
+.home .bottom{
+    margin-top: 70px;
+}
+.home .bottom ul{
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
+.home .bottom ul a:hover{
+    transition: .3s;
+   color: var(--first-color);
+}
+.home .best{
+    position: absolute;
+    bottom: 9%;
+    right: 8%;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 16px;
+    background-color: var(--first-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
+    border-radius: 6px;
+}
+.home .best .img{
+    width: 55%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.281);
+    border-radius: 6px;
+}
+.home .best img{
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+}
+.home .best img:hover{
+    transform: scale(1.1);
+}
+.home .best .more{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    width: 42%;
+}
+.home .best p{
+    font-size: 19px;
+}
+.more a:hover{
+    transition: .3s;
+    font-weight: bold;
+    color: black;
+}
+
+.dark-mode{
+    background-color: var(--first-color-alt);
+}
+.dark-mode .title{
+    color: white;
+    border-block:2px solid white ;
+}
+.dark-mode h1{
+    transition: .3s;
+    color: white;
+}
+.fa-sun{
+    display: none;
+}
+
+
