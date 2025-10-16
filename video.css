@@ -6,6 +6,9 @@
     margin-bottom: 30px;
     border-block:2px solid var(--first-color) ;
 }
+.dark-mode .video .title{
+    border-block:2px solid white ;
+}
 .video p{
     color: var(--first-color);
     font-size: 17px;
@@ -133,4 +136,5 @@ footer{
 .dark-mode .video p{
     color: white;
 }
+
 
