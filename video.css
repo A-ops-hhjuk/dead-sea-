@@ -126,4 +126,11 @@ footer{
 .copyright{
     text-align: center;
 }
+.dark-mode .place .card{
+ border-radius: 6px;
+    box-shadow: 0 2px 6px white;    
+}
+.dark-mode .video p{
+    color: white;
+}
 
